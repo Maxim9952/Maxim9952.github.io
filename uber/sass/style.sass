@@ -1,0 +1,51 @@
+@use '__fonts'
+@use '__nav'
+@use '__header'
+@use '__firstSection'
+@use '__secondSection'
+@use '__thridSection'
+@use '__fourthSection'
+@use '__fifthSection'
+@use '__sixthSection'
+@use '__footer'
+@use '__mobilePort'
+@use '__variable' as *
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Roboto', sans-serif
+    height: auto
+    overflow-x: hidden
+
+button
+    background-image: linear-gradient(0.0deg, $blue 0%, #4ce2ff 100%)
+    border: 3px solid rgba(0,0,0,0.06)
+    box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.11)
+    border: none
+    border-radius: 5px
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2)
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    color: $white
+
+.top-insert
+    width: 112px
+    height: 24px
+    background-color: $black
+    color: $white
+    font-size: 11px
+    font-weight: 100
+    text-transform: uppercase
+    display: flex
+    span
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+    

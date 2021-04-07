@@ -1,0 +1,86 @@
+@use '__variable' as *
+footer
+    min-width: 100%
+    height: 155px
+    position: relative
+    display: flex
+    justify-content: space-between
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 8px
+        background-color: $darkBlue
+        top: auto
+        bottom: 0
+    .first-fav
+        margin-left: 1.5rem
+        margin-top: 3.1rem
+        img
+            width: 32px
+            height: 32px
+            margin-right: 0.27rem
+
+    .nav
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 390px
+        /** margin-left: 10.5rem **/
+        margin-left: 8.5rem
+        margin-top: 0.8rem
+        hr
+            width: 299px
+            height: 4px
+            border: none
+            background-color: $lightBlue
+            margin-bottom: 1.8rem
+        .wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            .main
+                width: 96%
+                display: flex
+                justify-content: space-between
+                a
+                    font-size: 15px
+                    text-decoration: none
+                    font-weight: 300
+                    text-transform: uppercase
+                    color: $darkBlue
+                        
+            .center
+                margin-top: 0.4rem
+                width: 100%
+                display: flex
+                justify-content: space-between
+                margin-top: 0.7rem
+                a
+                    font-size: 11px
+                    text-decoration: none
+                    font-weight: 300
+                    text-transform: uppercase
+                    color: $footerGray
+                        
+            .language
+                margin-top: 0.8rem
+                a
+                    font-size: 11px
+                    font-weight: 400
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: $lightBlue
+    
+    .hide
+        display: none
+
+
+
+    .second-fav
+        margin-right: 0.7rem
+        margin-top: 3.2rem
+        img
+            width: 95px
+            height: 27px

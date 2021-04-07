@@ -1,0 +1,35 @@
+@use '__variable' as *
+footer
+    width: 100%
+    height: 166px
+    background-color: $footerBacground
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    .contain
+        text-align: center
+        margin-left: 1.3rem
+        .one
+            display: flex
+            align-items: center
+            a
+                font-size: 15px
+                font-weight: 300
+                text-decoration: underline
+                color: $footerColor
+            hr
+                height: 1rem
+                border: 1px solid $footerColor
+                margin: 0 6px
+        .two
+            font-size: 15px
+            line-height: 21px
+            font-weight: 300
+            color: $footerColor
+            a
+                font-size: 15px
+                font-weight: 300
+                text-decoration: none
+                color: $footerColor
+                

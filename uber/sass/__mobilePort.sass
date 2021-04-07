@@ -1,0 +1,416 @@
+//Desctop first
+//Max width 1200px
+@use '__variable' as *
+@media screen and (max-width: 1200px)
+    nav
+        ul
+            li
+                font-size: 14px
+
+    header
+        justify-content: space-around
+        .logo
+            right: 0
+        .phone
+            left: 0
+
+    .second-section
+        .advantage
+            width: 979px
+            .wrap
+                .text
+                    width: 20rem
+
+    .thrid-section
+        .mobile
+            width: 990px
+
+    .fifth-section
+        .container
+            width: 971px
+            .terms
+                ul
+                    width: 20rem
+
+    footer
+        .first-fav
+            width: 11rem
+        .second-fav
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-end
+
+//Max width 992px
+@media screen and (max-width: 992px)
+    nav
+        padding-left: 1rem
+        ul
+            li
+                font-size: 11px
+                &::after
+                    margin: 0 20px
+
+    .first-section
+        .wrap
+            h1
+                font-size: 51px
+            h2
+                font-size: 31px
+            span
+                font-size: 17px
+                p
+                    width: 745px
+            button
+                margin-left: 0
+
+    .second-section
+        height: 87rem
+        .advantage
+            width: 652px
+                
+            .wrap
+                width: 614px
+                .circle-wrap
+                    width: 142px
+                .text
+                    width: 100%   
+                &:nth-of-type(-2n+2)
+                    margin-top: 2rem
+
+    .thrid-section
+        .mobile
+            width: 720px
+            .wrap
+                width: 220px
+                height: 210px
+                span
+                    font-size: 16px
+                    width: 14rem
+
+    .fourth-section
+        .available-uber
+            img
+                width: 43rem
+
+    .fifth-section
+        height: 1067px
+        .container
+            width: 733px
+            .terms
+                margin-right: 0
+                &:nth-of-type(-2n+3)
+                    margin-right: 0
+                    
+                ul
+                    width: 15rem
+
+    footer
+        .nav
+            width: 45rem
+            margin-left: 4.5rem
+        .second-fav
+            margin-top: 2.2rem
+
+//Max width 768px
+@media screen and (max-width: 768px)
+    nav
+        padding-left: 0.5rem
+        ul
+            li
+                font-size: 11px
+                &::after
+                    margin: 0px 5px
+                    padding: 4px 0
+
+    header
+        .logo
+            img
+                width: 11rem
+        .phone
+            .call
+                a
+                    font-size: 18px
+
+    .first-section
+        .wrap
+            h1
+                font-size: 39px
+            h2
+                font-size: 25px
+            span
+                p
+                    width: 35rem
+
+    .second-section
+        h3
+            font-size: 28px
+        .advantage
+            width: 560px
+            .wrap
+                width: 535px
+
+    .thrid-section
+        padding-left: 0
+        h2
+            font-size: 32px
+        h3
+            font-size: 12px
+        .mobile
+            width: 553px
+            .wrap
+                width: 180px
+                height: 210px
+                span
+                    width: 11rem
+
+    .fourth-section
+        padding-left: 0
+        .available-uber
+            img
+                width: 33rem
+
+    .fifth-section
+        height: 97rem
+        .container
+            width: 529px
+            flex-direction: column
+            .terms
+                h3
+                    margin-top: 3rem
+                ul
+                    width: 25rem
+
+    footer
+        justify-content: normal
+        flex-direction: column
+        height: 15rem
+        &::before 
+            display: none
+        .nav
+            margin-left: 0
+            margin: 0.5rem auto
+            width: 15rem
+            hr
+                width: 228px
+            .wrap
+                flex-wrap: wrap
+                .main
+                    a
+                        font-size: 11px
+                .center
+                    flex-wrap: wrap
+                    a
+                        font-size: 11px
+        .first-fav
+            display: none
+        .hide
+            display: block
+            margin-left: 0
+            margin: 1rem auto
+        .second-fav
+            margin: 0.5rem auto
+
+//Max width 576px
+@media screen and (max-width: 576px)
+    nav
+        .visible
+            display: none
+        .hamburger
+            display: block
+            z-index: 2
+            #menu__toggle 
+                opacity: 0
+            .menu__btn 
+                display: flex
+                align-items: center
+                position: fixed
+                left: auto
+                right: 1rem
+                bottom: auto
+                top: 1rem
+                width: 26px
+                height: 26px
+                cursor: pointer
+                z-index: 2
+                span, span::before, span::after
+                    display: block
+                    position: absolute
+                    width: 100%
+                    height: 2px
+                    background-color: #707070
+                    transition-duration: .25s
+                span::before
+                    content: ''
+                    top: -8px
+                span::after
+                    content: ''
+                    top: 8px
+            .menu__box
+                display: block
+                position: fixed
+                visibility: hidden
+                top: 0
+                right: -100%
+                width: 250px
+                height: 100%
+                margin: 0
+                padding: 80px 0
+                list-style: none
+                text-align: right
+                background-color: $black
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
+                transition-duration: .25s
+                z-index: 1
+                li:after
+                    border: none
+                li
+                    line-height: 28px
+                .menu__item
+                    display: block
+                    padding: 12px 24px
+                    font-size: 15px
+                    font-weight: 300
+                    color: $white
+                    text-decoration: none
+                    transition-duration: .25s
+                    &:hover
+                        /** background-color: #CFD8DC **/
+            #menu__toggle:checked ~ .menu__btn > span 
+                transform: rotate(45deg)
+            #menu__toggle:checked ~ .menu__btn > span::before 
+                top: 0
+                transform: rotate(0)
+            #menu__toggle:checked ~ .menu__btn > span::after 
+                top: 0
+                transform: rotate(90deg)
+            #menu__toggle:checked ~ .menu__box 
+                visibility: visible
+                right: 0
+
+    header
+        .logo
+            width: 8rem
+            img
+                width: 9rem
+            span
+                display: none
+        .phone
+            flex-direction: column
+            margin-right: 0
+            .call
+                margin-right: 0
+                span
+                    display: none
+                a
+                    font-size: 15px
+            button
+                width: 116px
+                height: 26px
+                font-size: 10px
+
+    .first-section
+        text-align: center
+        justify-content: center
+        padding-left: 0
+        .wrap
+            h1
+                font-size: 30px
+                width: 17rem
+                margin-top: 237px
+                margin: 0 auto
+            h2
+                font-size: 22px
+                margin: 0 auto
+                margin-top: 2rem
+            span
+                display: none
+            button
+                margin: 5rem auto
+            
+
+    .second-section
+        height: 160rem
+        padding-left: 0
+        h3
+            font-size: 15px
+        .advantage
+            flex-direction: column
+            align-items: center
+            padding-left: 2rem
+            width: 598px
+            .wrap
+                flex-direction: column
+                .circle-wrap
+                    width: 100px
+                    height: 100px
+                .text
+                    width: 18rem
+                    font-size: 15px
+                    margin-top: 1rem
+
+    .thrid-section
+        margin-left: 0
+        height: 125rem
+        h2
+            font-size: 16px
+        h3
+            font-size: 14px
+            text-align: center
+        .mobile
+            width: 290px
+            flex-direction: column
+            .wrap
+                width: 290px
+                height: 254px
+                margin-top: 1rem
+
+    .fourth-section
+        background: none
+        background-color: $darkBlue
+        height: 467px
+        padding-left: 0
+        h2
+            display: none
+        h3
+            display: none
+        .available-uber
+            img
+                width: 18rem
+        h4
+            font-size: 17px
+            color: $white
+
+    .fifth-section
+        padding-left: 0
+        height: 115rem
+        h2
+            font-size: 20px
+        .container
+            width: 97%
+            flex-direction: column
+            .terms
+                margin-top: 2rem
+                ul
+                    width: 77vw
+                .bonus
+                    font-size: 15px
+                    width: 19rem
+
+    .sixth-section
+        padding-left: 0
+        height: 487px
+        h2
+            font-size: 30px
+        h3
+            font-size: 15px
+        a
+            font-size: 14px
+
+
+
+                
+                                     
+                    
+    
+
+        

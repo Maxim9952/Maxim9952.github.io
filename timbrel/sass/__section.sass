@@ -1,0 +1,66 @@
+@use '__variable' as *
+section
+    /** max-width: 1920px **/
+    width: 100%
+    /** height: 539px **/
+    height: 539px
+    display: flex
+    flex-direction: column
+    background: url(../img/layers2.png) no-repeat center / 100% 100%
+    align-items: center
+    margin: 0 auto
+    .border
+        width: 100%
+        height: 31.5rem
+        border: 5px solid $circleButton
+        border-style: solid none solid none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 2px
+        .wrap
+            margin-left: 29.3rem
+            margin-top: 1.5rem
+            h2
+                font-size: 41px
+                line-height: 40px
+                font-weight: 700
+                text-transform: uppercase
+                color: $white
+                width: 33rem
+                margin-bottom: 10px
+                span
+                    font-size: 38px
+                    line-height: 40px
+            h3
+                font-size: 19px
+                line-height: 20px
+                font-weight: 700
+                color: $white
+                width: 35rem
+                margin-bottom: 5.8rem
+            input
+                width: 315px
+                height: 45px
+                background-color: $white
+                border: 3px solid rgba(0,0,0,0.14)
+                position: relative
+                bottom: 2.6rem
+                background-image: url(../img/mail.png)
+                background-size: 1.2rem
+                background-repeat: no-repeat
+                background-position: 95% 11px
+                background-color: $white
+                padding-left: 0.8rem
+                padding-bottom: 4px
+                &::placeholder
+                    font-size: 14px
+                    line-height: 28px
+                    font-weight: 300
+                    color: #cbcbcb
+                
+            button
+                height: 55px
+                margin-left: 26px
+                position: relative
+                bottom: 2.4rem

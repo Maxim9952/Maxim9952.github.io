@@ -1,0 +1,91 @@
+@use '__variable' as *
+.thrid-section
+    min-width: 100%
+    height: 864px
+    background: url(../img/thridBacground.png) center / cover no-repeat
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow: hidden
+    padding-left: 0.5rem
+    .top-insert
+        margin-top: 3rem
+    h2
+        font-size: 38px
+        font-weight: 700
+        text-transform: uppercase
+        color: $blackText
+        margin-top: 1.8rem
+    h3
+        font-size: 17px
+        line-height: 2rem
+        font-weight: 400
+        color: $blackText
+    .mobile
+        width: 1100px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 1.65rem
+        .wrap
+            width: 320px
+            height: 280px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            &:nth-of-type(1)
+                background: url(../img/thridSection/1.png) center /cover no-repeat
+            &:nth-of-type(2)
+                background: url(../img/thridSection/2.png) center /cover no-repeat
+            &:nth-of-type(3)
+                background: url(../img/thridSection/3.png) center /cover no-repeat
+            &:nth-of-type(4)
+                background: url(../img/thridSection/4.png) center /cover no-repeat
+            &:nth-of-type(5)
+                background: url(../img/thridSection/5.png) center /cover no-repeat
+            &:nth-of-type(6)
+                background: url(../img/thridSection/6.png) center /cover no-repeat
+            &:nth-of-type(n+4)
+                margin-top: 1.2rem
+                
+            span
+                font-size: 24px
+                font-weight: 400
+                text-transform: uppercase
+                color: $white
+                text-align: center
+                width: 18rem
+                margin-top: 5.5rem
+            .plus
+                width: 26px
+                height: 26px
+                background-color: $black
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                margin-bottom: 2.2rem
+                margin-left: 0.5rem
+                .stick
+                    background: #CD6D45
+                    height: 1.6px 
+                    width: 15px
+                    position: relative
+                    
+                    &::after
+                        content: ""
+                        height: 15px 
+                        width: 2px
+                        background: #CD6D45
+                        position: absolute 
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        
+                        
+
+                        
+                    
+                
+                

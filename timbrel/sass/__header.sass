@@ -1,0 +1,90 @@
+@use '__variable' as *
+header
+    margin: 0 auto
+    height: 167px
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .hamburger
+        display: none
+    nav  //Menu
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            margin-left: 4.2rem
+            li
+                a
+                    text-decoration: none
+                    font-size: 12px
+                    font-weight: 700
+                    text-transform: uppercase
+                    color: $headerText
+            .show
+                height: 27px
+                border: 1px dashed gray
+                border-style: none dashed none none
+                margin: 6px 25.8px
+                &:last-child
+                    border: none
+        hr
+            width: 100vw
+            color: #808080
+
+
+    .logo-wrap  //Logo info
+        display: flex
+        align-items: center
+        .logo
+            margin-left: 1rem
+            margin-bottom: 0.1rem
+        .logo-txt-img
+            display: flex
+            margin-left: 2.5rem
+            margin-bottom: 0.5rem
+            align-items: center
+            .img-wrap
+                width: 40px
+                height: 40px
+                border: 1px solid $circleButton
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                margin-right: 11px
+            span
+                width: 135px
+                font-size: 13px
+                line-height: 16px
+                font-weight: 300
+                color: $headerText
+                margin-right: 10px
+                &:nth-of-type(2)
+                    /** margin-right: 6px **/
+                    
+                &:last-child
+                    width: 190px
+        .logo-phone
+            h1
+                font-size: 14px
+                line-height: 28px
+                font-weight: 300
+                color: #838383
+                margin-left: 2rem
+            h2
+                font-size: 24px
+                line-height: 29px
+                font-weight: 700
+                text-transform: uppercase
+                color: $headerText
+                margin-left: 1.5rem
+                span
+                    color: $dedicatedPhone
+            button
+                margin-bottom: 1.16rem
+                margin-top: 0.4rem
+                margin-left: 0.7rem

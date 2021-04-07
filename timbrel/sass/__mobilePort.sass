@@ -1,0 +1,249 @@
+//Desktop First
+//Max width 1200
+$headerText: #3b3b3b
+@media screen and (max-width: 1920px)
+    section
+        background: url(../img/layers2.png) no-repeat center / 1920px 100%
+@media screen and (max-width: 1200px)
+    header
+        nav
+            ul
+                .show
+                    margin: 6px 16px
+        .logo-wrap
+            height: 77%
+            .logo-txt-img
+                .img-wrap
+                    width: 30px
+                    height: 30px
+                    img
+                        width: 15px
+                        height: 15px
+                    &:first-child
+                        img
+                            height: 20px
+            .logo-phone
+                h1
+                    font-size: 13px
+                h2
+                    font-size: 23px
+                
+    section
+        .border
+            .wrap
+                margin-left: 24rem
+
+//Max width 992px
+@media screen and (max-width: 992px)
+    header
+        nav
+            ul
+                margin-left: 0px
+                .show
+                    margin: 6px 9px
+                li
+                    a
+                        font-size: 11px
+
+        .logo-wrap
+            .logo-txt-img
+                flex-wrap: wrap
+                width: 14rem
+                margin: 4px 0 6px 4rem
+                span
+                    margin-top: 7px
+                    &:last-child
+                        width: 171px
+
+        .logo-phone
+            margin-left: 1rem
+
+    section
+        background: url(../img/layers2.png) no-repeat -29rem/1900px 100%
+        .border
+            .wrap
+                h2
+                    width: 22rem
+                    font-size: 33px
+                    span
+                        font-size: 26px
+                h3
+                    width: 21rem
+                input
+                    width: 171px
+                button
+                    width: 140px
+                    bottom: 2.3rem
+                    font-size: 15px
+
+    footer
+        h2
+            margin-left: 0
+            font-size: 24px
+            hr
+                width: 125px
+                margin: 0 15px
+        .img-wrap
+            width: auto
+
+//Max width 768px
+@media screen and (max-width: 768px)
+    header
+        nav
+            ul
+                margin-left: 7px
+                .show
+                    height: 25px
+                    margin: 6px 5px
+                li
+                    a
+                        font-size: 9px
+        .logo-wrap
+            .logo-txt-img
+                margin: 4px 0 6px 2rem
+        .logo-phone
+            margin-left: -1rem
+
+
+    section
+        background: url(../img/layers2.png) no-repeat -55rem/1900px 100%
+        .border
+            .wrap
+                margin-left: 0
+                h2
+                    width: 27rem
+                    font-size: 37px
+                    span
+                        font-size: 29px
+                h3
+                    width: 27rem
+                    font-size: 19px
+                input
+                    width: 215px
+                button
+                    width: 170px
+
+    footer
+        h2
+            font-size: 22px
+            hr
+                width: 57px
+
+//Max width 576px
+@media screen and (max-width: 576px)
+    header
+        .hamburger
+            display: block
+            #menu__toggle
+                opacity: 0
+            .menu__btn
+                display: flex
+                align-items: center
+                position: fixed
+                top: 20px
+                left: 20px
+                width: 26px
+                height: 26px
+                cursor: pointer
+                z-index: 2
+                span, span::before, span::after
+                    display: block
+                    position: absolute
+                    width: 100%
+                    height: 2px
+                    background-color: #616161
+                    transition-duration: .25s
+                span::before
+                    content: ''
+                    top: -8px
+                span::after
+                    content: ''
+                    top: 8px
+            .menu__box
+                display: block
+                position: fixed
+                visibility: hidden
+                top: 0
+                left: -100%
+                width: 200px
+                height: 100%
+                margin: 0
+                padding: 80px 0
+                list-style: none
+                text-align: left
+                background-color: #ECEFF1
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
+                transition-duration: .25s
+                z-index: 1
+                .menu__item
+                    display: block
+                    padding: 12px 39px
+                    text-decoration: none
+                    font-size: 12px
+                    font-weight: 700
+                    text-transform: uppercase
+                    color: $headerText
+                    &:hover
+                        background-color: #CFD8DC
+            #menu__toggle:checked ~ .menu__btn > span 
+                transform: rotate(45deg)
+            #menu__toggle:checked ~ .menu__btn > span::before 
+                top: 0
+                transform: rotate(0)
+            #menu__toggle:checked ~ .menu__btn > span::after 
+                top: 0
+                transform: rotate(90deg)
+            #menu__toggle:checked ~ .menu__box 
+                visibility: visible
+                left: 0
+        nav
+            display: none
+        .logo-wrap
+            display: flex
+            margin-top: 1rem
+            .logo
+                margin: 0
+                margin-top: 0
+            .logo-txt-img
+                display: none
+            .logo-phone
+                margin: 0 0 0 1rem
+                h1
+                    font-size: 11px
+                    margin-right: 1rem
+                h2
+                    font-size: 19px
+                button
+                    width: 155px
+
+    section
+        .border
+            .wrap
+                margin-left: 140px
+                h2
+                    width: 27rem
+                    font-size: 30px
+                    span
+                        font-size: 22px
+                h3
+                    width: 18rem
+                    font-size: 17px
+                input
+                    width: 242px
+                    margin-left: 0.6rem
+                button
+                    width: 260px
+                    margin-left: 10px
+
+    footer
+        h2
+            font-size: 15px
+            hr
+                display: none
+
+    
+
+    
+                    
+    
+    

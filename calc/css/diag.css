@@ -1,0 +1,84 @@
+.date-cont {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 60%);
+    height: 872px;
+    min-width: 100%;
+}
+
+.date-warn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 1.5px 20px 0 rgb(1 0 42 / 10%);
+}
+
+.date-warn-cont {
+    margin: 20px 0 0 30px;
+}
+
+.warn-date {
+    display: flex;
+    justify-content: space-around;
+}
+
+.warn-list {
+    text-align: center;
+    margin: 20px;
+}
+
+.warn-sel {
+    height: 35px;
+    width: 100px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    box-shadow: 0 2.5px 10px 0 rgb(1 0 42 / 10%);
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #a7a7a7;
+    margin-top: 5px;
+}
+
+.warn-inp {
+    height: 35px;
+    width: 445px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    box-shadow: 0 2.5px 10px 0 rgb(1 0 42 / 10%);
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #a7a7a7;
+    margin-top: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.warn-btn {
+    width: 70px;
+    height: 30px;
+    display: block;
+    border: none;
+    border-radius: 2.5px;
+    background-image: linear-gradient(
+336deg
+,#ffbd75,#ff964b),linear-gradient(#fff,#fff);
+    box-shadow: 0 2.5px 10px 0 rgb(1 0 42 / 10%);
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 auto;
+    margin-top: 5px;
+}
