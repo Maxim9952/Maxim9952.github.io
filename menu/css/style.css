@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer {
+    height: 4rem;
+    width: 100%;
+    background-color: bisque;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+    bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer ul li a img {
+    height: 1.6rem;
+}
+
+.block {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    background-color: black;
+}
