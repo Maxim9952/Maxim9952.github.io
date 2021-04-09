@@ -10,7 +10,7 @@ body {
 footer {
     height: 4rem;
     width: 100%;
-    background-color: bisque;
+    background-color: white;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -27,8 +27,8 @@ footer ul {
 }
 
 footer ul li a img {
-    height: 1.6rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 footer ul li a{
@@ -36,7 +36,11 @@ footer ul li a{
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    color: black;
+    font-size: 1rem;
+
 }
+
 
 .block {
     width: 100%;
