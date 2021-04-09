@@ -8,7 +8,7 @@ body {
     flex-direction: column;
 }
 footer {
-    height: 4rem;
+    height: 2.8rem;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -23,13 +23,16 @@ footer ul {
     display: flex;
     list-style: none;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer ul li a img {
     height: 1.5rem;
     width: 1.5rem;
+    fill: aqua;
 }
+
+
 
 footer ul li a{
     display: flex;
@@ -37,7 +40,7 @@ footer ul li a{
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
 
 }
 
